@@ -7,15 +7,38 @@
  */
 use Phalcon\Mvc\Model;
 use Phalcon\Annotations\Adapter\Xcache;
-$application->post('/time/line',function () use ($application){
-    $articleCol = new Article();
-    $articles = $articleCol->find(
-        array(
-            "name" => "shuji",
-        ),
-        array("_id","name","desc")
-    );
-    foreach ($articles as $article){
-        echo json_decode($article);
+$application->post('/nlp/getItemById',function () use ($application)
+{
+    $response = new ResponseUTF8();
+    $errorCode = 200;
+    $errorMessage = "Success";
+    $data = "";
+    try{
+        $jsonObj = $application->request->getPost();
+        if(empty($jsonObj['id'])){
+            $errorCode = 201;
+            $errorMessage = "id cannot be empty";
+            $response->setJsonContent(array(
+                "error_code" => $errorCode,
+                "error_message" => $errorMessage,
+                "data" => ""
+            ));
+            return $response;
+        } else {
+            $id = $jsonObj['id'];
+            $data = WebdevNlp::findFirst(array(
+                "conditions" => array("_id" => new MongoId($id))
+            ));
+        }
+    }catch (Exception $exception){
+        $errorCode = $exception->getCode();
+        $errorMessage = $exception->getMessage();
     }
+    $result = array(
+        "error_code" => $errorCode,
+        "error_message" => $errorMessage,
+        "data" => $data
+    );
+    $response->setJsonContent($result);
+    return $response;
 });

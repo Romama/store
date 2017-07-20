@@ -80,10 +80,10 @@ $di->set('mongo_test',function () {
     return $mongo->selectDB($config->mongodb_test->dbname);
 },true);
 
-$di->set('mongo_log',function () {
+$di->set('mongo_webdev',function () {
     $config = $this->getConfig();
-    $mongo = new MongoClient("mongodb://". $config->mongodb_log->host. ":". $config->mongodb_log->port);
-    return $mongo->selectDB($config->mongodb_log->dbname);
+    $mongo = new MongoClient("mongodb://". $config->mongo_webdev->host. ":". $config->mongo_webdev->port);
+    return $mongo->selectDB($config->mongo_webdev->dbname);
 },true);
 
 /**

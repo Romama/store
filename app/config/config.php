@@ -39,10 +39,10 @@ return new \Phalcon\Config([
     ],
 
     // mongodb 2
-    'mongodb_log' => [
-        'host'     => 'localhost',
+    'mongodb_webdev' => [
+        'host'     => 'webdev.pweg.me',
         'port'     => '27017',
-        'dbname'   => 'log'
+        'dbname'   => 'nlpText'
     ]
 
 ]);
