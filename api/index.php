@@ -4,6 +4,7 @@
  * 1 设置自动加载器autoloader
  * 2 配置依赖注入DI
  * 3 处理应用请求
+ * 4 配置api
  */
 use Phalcon\Di\FactoryDefault;
 
