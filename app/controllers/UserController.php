@@ -30,12 +30,27 @@ class UserController extends ControllerBase
     {
         $this->view->disable();
         $response = $this->response; //注意，response是属性值，不是方法
+        $data = "";
         if($this->request->isPost()) {
-            $username = $_POST["name"];
-            $userpwd = $_POST["password"];
+            $params = $this->request->getPost();
+            if(empty($params["name"])){
+                $this->errorCode = 201;
+                $this->errorMessage = "name can not be empty";
+                $this->returnDataRegularization($data,$response);
+            }else {
+                $username = $_POST["name"];
+            }
+
+            if(empty($params["password"])){
+                $this->errorCode = 201;
+                $this->errorMessage = "password can not be empty";
+                $this->returnDataRegularization($data,$response);
+            }else{
+                $userpwd = $_POST["password"];
+            }
             $userLogic = new UserLogic();
-            $user = $userLogic->getUserByNameAndPwd($this->errorCode,$this->errorMessage,$username,$userpwd);
-            $this->returnDataRegularization($user,$response);
+            $data = $userLogic->getUserByNameAndPwd($this->errorCode,$this->errorMessage,$username,$userpwd);
+            $this->returnDataRegularization($data,$response);
         }else {
             $this->askPostSend($response);
         }

@@ -22,6 +22,8 @@ class LocalArticleLogic
                 $errorCode = 201;
                 $errorMessage = "词条不存在";
                 return "";
+            }else {
+                $article->_id = $article->_id->__toString();
             }
             return $article;
         }catch (Exception $exception){
