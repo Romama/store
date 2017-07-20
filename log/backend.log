@@ -1,0 +1,22 @@
+[20170720 14:58:56 677715][NOTICE][logid:10091955200][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:01:07 945430][NOTICE][logid:11369395200][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:02:29 465805][NOTICE][logid:11364275200][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:02:29 686850][NOTICE][logid:11364275200][client:::1][C:\wamp64\www\store\api\index.php:85]handle request end!method:/store/api/nlp/getItemById total cost:222(ms)<br>
+[20170720 15:03:15 929919][NOTICE][logid:10137292800][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:03:15 983287][NOTICE][logid:10137292800][client:::1][C:\wamp64\www\store\api\index.php:85]handle request end!method:/store/api/nlp/getItemById total cost:54(ms)<br>
+[20170720 15:04:09 690704][NOTICE][logid:10023584192][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:04:09 720267][NOTICE][logid:10023584192][client:::1][C:\wamp64\www\store\api\index.php:85]handle request end!method:/store/api/nlp/getItemById total cost:30(ms)<br>
+[20170720 15:05:15 530837][NOTICE][logid:10993177600][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:05:15 561058][NOTICE][logid:10993177600][client:::1][C:\wamp64\www\store\api\index.php:85]handle request end!method:/store/api/nlp/getItemById total cost:30(ms)<br>
+[20170720 15:05:34 380268][NOTICE][logid:10038766592][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:05:34 405884][NOTICE][logid:10038766592][client:::1][C:\wamp64\www\store\api\index.php:85]handle request end!method:/store/api/nlp/getItemById total cost:26(ms)<br>
+[20170720 15:05:51 249675][NOTICE][logid:10537868800][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:05:51 279609][NOTICE][logid:10537868800][client:::1][C:\wamp64\www\store\api\index.php:85]handle request end!method:/store/api/nlp/getItemById total cost:30(ms)<br>
+[20170720 15:08:36 366761][NOTICE][logid:10515584000][client:::1][C:\wamp64\www\store\api\index.php:78]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:08:36 393415][NOTICE][logid:10515584000][client:::1][C:\wamp64\www\store\api\index.php:85]handle request end!method:/store/api/nlp/getItemById total cost:28(ms)<br>
+[20170720 15:10:08 294419][NOTICE][logid:10245947392][client:::1][C:\wamp64\www\store\api\index.php:74]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:10:08 320806][NOTICE][logid:10245947392][client:::1][C:\wamp64\www\store\api\index.php:81]handle request end!method:/store/api/nlp/getItemById total cost:27(ms)<br>
+[20170720 15:19:01 410290][NOTICE][logid:10105864192][client:::1][C:\wamp64\www\store\api\index.php:74]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:19:01 440135][NOTICE][logid:10105864192][client:::1][C:\wamp64\www\store\api\index.php:81]handle request end!method:/store/api/nlp/getItemById total cost:30(ms)<br>
+[20170720 15:28:01 617883][NOTICE][logid:10096238592][client:::1][C:\wamp64\www\store\api\index.php:75]handle request start!method:/store/api/nlp/getItemById<br>
+[20170720 15:28:01 649507][NOTICE][logid:10096238592][client:::1][C:\wamp64\www\store\api\index.php:82]handle request end!method:/store/api/nlp/getItemById total cost:32(ms)<br>

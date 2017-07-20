@@ -82,8 +82,8 @@ $di->set('mongo_test',function () {
 
 $di->set('mongo_webdev',function () {
     $config = $this->getConfig();
-    $mongo = new MongoClient("mongodb://". $config->mongo_webdev->host. ":". $config->mongo_webdev->port);
-    return $mongo->selectDB($config->mongo_webdev->dbname);
+    $mongo = new MongoClient("mongodb://". $config->mongodb_webdev->host. ":". $config->mongodb_webdev->port);
+    return $mongo->selectDB($config->mongodb_webdev->dbname);
 },true);
 
 /**

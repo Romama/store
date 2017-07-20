@@ -10,7 +10,9 @@ $loader->registerDirs(
         $config->application->controllersDir,
         $config->application->modelsDir,
         $config->application->testsDir,
-        $config->application->scriptDir,
+        $config->application->restDir,
         $config->application->logicDir,
+        $config->application->libraryDir,
+        $config->application->configDir,
     ]
 )->register();

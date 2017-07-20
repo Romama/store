@@ -23,8 +23,9 @@ return new \Phalcon\Config([
         'libraryDir'     => APP_PATH . '/library/',
         'cacheDir'       => BASE_PATH . '/cache/',
         'testsDir'       => BASE_PATH . '/tests/',
-        'scriptDir'      => APP_PATH . '/script/',
+        'restDir'        => APP_PATH . '/rest/',
         'logicDir'       => APP_PATH . '/logic/',
+        'configDir'      => APP_PATH . '/config/',
         // This allows the baseUri to be understand project paths that are not in the root directory
         // of the webpspace.  This will break if the public/index.php entry point is moved or
         // possibly if the web server rewrite rules are changed. This can also be set to a static path.
@@ -42,7 +43,7 @@ return new \Phalcon\Config([
     'mongodb_webdev' => [
         'host'     => 'webdev.pweg.me',
         'port'     => '27017',
-        'dbname'   => 'nlpText'
+        'dbname'   => 'nlptext'
     ]
 
 ]);
