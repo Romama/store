@@ -17,7 +17,7 @@ class UserLogic
             }
             if(empty($userpwd)) {
                 $errorCode = 201;
-                $errorMessage = "user password cannot bu empty";
+                $errorMessage = "user password cannot be empty";
                 return "";
             }
             $conditions = 'username = :username: and userpwd = :userpwd:';
